@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 const api = require("./githubApi")
 
 // Questions User Answers
-function askQuestions() {
+function Questions() {
   return inquirer.prompt([
     {
       type: "input",
@@ -65,7 +65,23 @@ function askQuestions() {
   ]);
 };
 
+function writetoFile(fileName, data) {
+    fs.writeFile(fileName, data, "utf8", function (err) {
+      if (err) {
+        throw err;
+      }
+      console.log("You have successfully written your README file");
+    });
+  };  
 
-
-    
-
+  async function init() {
+    try {
+      const answers = await Questions();
+      generateMarkdown(answers);
+  
+      } catch (err) {
+        console.log(err);
+      }
+  };
+  
+  init();
