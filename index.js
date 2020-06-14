@@ -1,5 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generator = require("./generator")
 const api = require("./githubApi")
 
 // Questions User Answers
@@ -77,7 +78,7 @@ function writetoFile(fileName, data) {
   async function init() {
     try {
       const answers = await Questions();
-      generateMarkdown(answers);
+      writetoFile("README.md", generator(answers));
   
       } catch (err) {
         console.log(err);
