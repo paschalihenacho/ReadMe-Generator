@@ -1,5 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const api = require("./githubApi")
 
 // Questions User Answers
 function askQuestions() {
