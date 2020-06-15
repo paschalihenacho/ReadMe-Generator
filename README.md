@@ -1,8 +1,8 @@
 
-    # README.md Generator 
+    # README generator 
     
     ## Description
-        A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
+      decrease project time
   
     ## Table of Contents
     - [Installation](#installation)
@@ -13,19 +13,19 @@
     - [Details](#details)
   
     ## Installation
-    Packages required to run this program are: node js
+    Packages required to run this program are: 
     
     ## Usage
-    Examples of how to use this program: quickly create team readme file
+    Examples of how to use this program: 
   
     ## License
     MIT
   
     ## Tests
-    To test, run the following command: npm test
+    To test, run the following command: 
   
     ## Contributors
-    Paschal Ihenacho
+    
   
     ## Contact
     
@@ -33,6 +33,6 @@
     
 ![Profile Image](https://github.com/paschalihenacho.png?size=50)
     
-View the project in GitHub at: https://github.com/paschalihenacho/ReadMe-Generator
+View the project in GitHub at: www.project.com
     
 If you have any questions, contact the author directly at ihenachopaschal@yahoo.com.

@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generator = require("./generator")
+const generateMD = require("./generateMd")
 const api = require("./githubApi")
 
 // Questions User Answers
@@ -47,6 +47,11 @@ function Questions() {
       name: "usage"
     },
     {
+      type: "input",
+      message: "List all your outside sourcese that you would like to give credit to.",
+      name: "credit"
+    },
+    {
       type: "list",
       name: "license",
       message: "Choose kind of licese to have.",
@@ -78,7 +83,7 @@ function writetoFile(fileName, data) {
   async function init() {
     try {
       const answers = await Questions();
-      writetoFile("README.md", generator(answers));
+      writetoFile("README.md", generateMD(answers));
   
       } catch (err) {
         console.log(err);
