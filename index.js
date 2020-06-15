@@ -60,7 +60,7 @@ function Questions() {
     },
     {
       type: "input",
-      message: "List out all the projec contributors including yourself",
+      message: "List out all the project contributors including yourself:",
       name: "contributer"
     },
     {

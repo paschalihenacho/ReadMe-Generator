@@ -1,5 +1,5 @@
 function generateMD(data) {
-    const avatar = `https://github.com/${data.username}.png?size=50`;
+    const githubImageURL = `https://github.com/${data.username}.png?size=50`;
     const gitHub = `https://img.shields.io/badge/Github-${data.username}-4cbbb9`;
   
     return `
@@ -7,8 +7,11 @@ function generateMD(data) {
     
     ## Description
       ${data.description}
+    
+    ## Usage
+    ![GitHub Logo](/screenshot/sample.png)
   
-    ## Table of Contents:
+    ## Table of Contents
     - [Contributors](#contributors)
     - [Technology](#technology)
     - [Usage](#usage)
@@ -18,21 +21,22 @@ function generateMD(data) {
     - [Tests](#tests)
     - [Details](#details)
   
-    ## Collaborators:
+    ## Collaborators
     ${data.contributer}
 
-    ## Technologies: 
+    ## Technologies
     ${data.technology}
-    ## Installation:
+
+    ## Installation
     Packages required to run this program are: ${data.installation}
     
     ## Usage
     Examples of how to use this program: ${data.usage}
 
-    ## Credits:
+    ## Credits
     ${data.credit}
   
-    ## Installation:
+    ## Installation
     ${data.installation}
 
     ## License
@@ -41,9 +45,9 @@ function generateMD(data) {
     ## Tests
     To test, run the following command: ${data.tests}
 
-    ## Contact
+    ## Contact Author
     \n![Badge](${gitHub}) 
-    \n![Profile Image](${avatar})
+    \n![Profile Image](${githubImageURL})
     \nView the project in GitHub at: ${data.url}
     \nFor further assistance, contact the author at ${data.email}.`
      
