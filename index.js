@@ -33,7 +33,7 @@ function Questions() {
     },
     {
       type: "input",
-      message: "List packages need to run this project.",
+      message: "List packages needed to run this project.",
       name: "installation"
     },
     {
