@@ -8,7 +8,7 @@ function generateMD(data) {
     ## Description
       ${data.description}
     
-    ## Usage
+    ## ScreenShot
     ![GitHub Logo](/screenshot/sample.png)
   
     ## Table of Contents
