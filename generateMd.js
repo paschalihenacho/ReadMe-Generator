@@ -46,10 +46,10 @@ function generateMD(data) {
     To test, run the following command: ${data.tests}
 
     ## Contact Author
-    \n![Badge](${gitHub}) 
-    \n![Profile Image](${githubImageURL})
-    \nView the project in GitHub at: ${data.url}
-    \nFor further assistance, contact the author at ${data.email}.`
+    ![Badge](${gitHub}) 
+    ![Profile Image](${githubImageURL})
+    View the project in GitHub at: ${data.url}
+    For further assistance, contact the author at ${data.email}.`
      
   }
   
