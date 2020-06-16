@@ -3,23 +3,23 @@ function generateMD(data) {
     const gitHub = `https://img.shields.io/badge/Github-${data.username}-4cbbb9`;
   
     return `
-    ## ${data.title} 
+    \n## ${data.title} 
     
-    ## Description
-      ${data.description}
+    \n ## Description
+    \n${data.description}
     
     ## ScreenShot
-    ![GitHub Logo](/screenshot/sample.png)
+    \n![GitHub Logo](/screenshot/sample.png)
   
     ## Table of Contents
-    - [Contributors](#contributors)
-    - [Technology](#technology)
-    - [Usage](#usage)
-    - [Credits](#credit)
-    - [Installation](#installation)
-    - [License](#license)
-    - [Tests](#tests)
-    - [Details](#details)
+    \n- [Contributors](#contributors)
+    \n- [Technology](#technology)
+    \n- [Usage](#usage)
+    \n- [Credits](#credit)
+    \n- [Installation](#installation)
+    \n- [License](#license)
+    \n- [Tests](#tests)
+    \n- [Details](#details)
   
     ## Collaborators
     ${data.contributer}
@@ -46,10 +46,10 @@ function generateMD(data) {
     To test, run the following command: ${data.tests}
 
     ## Contact Author
-    ![Badge](${gitHub}) 
-    ![Profile Image](${githubImageURL})
-    View the project in GitHub at: ${data.url}
-    For further assistance, contact the author at ${data.email}.`
+    \n![Badge](${gitHub}) 
+    \n![Profile Image](${githubImageURL})
+    \nView the project in GitHub at: ${data.url}
+    \nFor further assistance, contact the author at ${data.email}.`
      
   }
   
