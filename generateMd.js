@@ -6,50 +6,50 @@ function generateMD(data) {
     \n## ${data.title} 
     
     \n ## Description
-    \n${data.description}
+      \n${data.description}
     
-    ## ScreenShot
-    \n![GitHub Logo](/screenshot/sample.png)
+    \n## ScreenShot
+      \n![GitHub Logo](/screenshot/sample.png)
   
-    ## Table of Contents
-    \n- [Contributors](#contributors)
-    \n- [Technology](#technology)
-    \n- [Usage](#usage)
-    \n- [Credits](#credit)
-    \n- [Installation](#installation)
-    \n- [License](#license)
-    \n- [Tests](#tests)
-    \n- [Details](#details)
+    \n## Table of Contents
+      \n- [Contributors](#contributors)
+      \n- [Technology](#technology)
+      \n- [Usage](#usage)
+      \n- [Credits](#credit)
+      \n- [Installation](#installation)
+      \n- [License](#license)
+      \n- [Tests](#tests)
+      \n- [Details](#details)
   
-    ## Collaborators
-    ${data.contributer}
+    \n## Collaborators
+      \n${data.contributer}
 
-    ## Technologies
-    ${data.technology}
+    \n## Technologies
+      \n${data.technology}
 
-    ## Installation
-    Packages required to run this program are: ${data.installation}
+    \n## Installation
+      \nPackages required to run this program are: ${data.installation}
     
-    ## Usage
-    Examples of how to use this program: ${data.usage}
+    \n## Usage
+      \nExamples of how to use this program: ${data.usage}
 
-    ## Credits
-    ${data.credit}
+    \n## Credits
+      \n${data.credit}
   
-    ## Installation
-    ${data.installation}
+    \n## Installation
+      \n${data.installation}
 
-    ## License
-    ${data.license}
+    \n## License
+      \n${data.license}
   
-    ## Tests
-    To test, run the following command: ${data.tests}
+    \n## Tests
+      \nTo test, run the following command: ${data.tests}
 
-    ## Contact Author
-    \n![Badge](${gitHub}) 
-    \n![Profile Image](${githubImageURL})
-    \nView the project in GitHub at: ${data.url}
-    \nFor further assistance, contact the author at ${data.email}.`
+    \n## Contact Author
+      \n![Badge](${gitHub}) 
+      \n![Profile Image](${githubImageURL})
+      \nView the project in GitHub at: ${data.url}
+      \nFor further assistance, contact the author at ${data.email}.`
      
   }
   
